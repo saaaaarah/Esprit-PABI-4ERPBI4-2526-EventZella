@@ -1,0 +1,36 @@
+date,year,day,holiday_name,holiday_type,id_holiday,codeH
+2022-10-08,2022,samedi,The Prophet's Birthday,Public Holiday,9,H10
+2022-10-15,2022,samedi,Evacuation Day,Public Holiday,11,H12
+2023-01-01,2023,dimanche,New Year,Public Holiday,13,H14
+2023-03-20,2023,lundi,Independence Day,Public Holiday,15,H16
+2023-03-20,2023,lundi,March Equinox,Season,17,H18
+2022-01-01,2022,samedi,New Year,Public Holiday,1,H2
+2023-03-23,2023,jeudi,Ramadan Start,Observance,19,H20
+2023-09-23,2023,samedi,September Equinox,Season,21,H22
+2023-09-27,2023,mercredi,The Prophet's Birthday,Public Holiday,23,H24
+2023-10-15,2023,dimanche,Evacuation Day,Public Holiday,25,H26
+2024-01-01,2024,lundi,New Year,Public Holiday,27,H28
+2024-03-11,2024,lundi,Ramadan Start,Observance,29,H30
+2024-03-20,2024,mercredi,Independence Day,Public Holiday,31,H32
+2024-03-20,2024,mercredi,March Equinox,Season,33,H34
+2024-09-15,2024,dimanche,The Prophet's Birthday,Public Holiday,35,H36
+2024-09-22,2024,dimanche,September Equinox,Season,37,H38
+2022-03-20,2022,dimanche,Independence Day,Public Holiday,3,H4
+2024-10-15,2024,mardi,Evacuation Day,Public Holiday,39,H40
+2025-01-01,2025,mercredi,New Year,Public Holiday,41,H42
+2025-03-01,2025,samedi,Ramadan Start,Observance,43,H44
+2025-03-20,2025,jeudi,Independence Day,Public Holiday,45,H46
+2025-03-20,2025,jeudi,March Equinox,Season,47,H48
+2025-03-31,2025,lundi,Eid al-Fitr,Public Holiday,49,H50
+2025-09-04,2025,jeudi,The Prophet's Birthday,Public Holiday,51,H52
+2025-09-22,2025,lundi,September Equinox,Season,53,H54
+2025-10-15,2025,mercredi,Evacuation Day,Public Holiday,55,H56
+2026-01-01,2026,jeudi,New Year,Public Holiday,57,H58
+2022-03-20,2022,dimanche,March Equinox,Season,5,H6
+2026-03-20,2026,vendredi,Independence Day,Public Holiday,59,H60
+2026-03-20,2026,vendredi,March Equinox,Season,61,H62
+2026-03-21,2026,samedi,Eid al-Fitr (Tentative Date),Public Holiday,63,H64
+2026-03-22,2026,dimanche,Eid al-Fitr Holiday (Tentative Date),Public Holiday,65,H66
+2026-09-23,2026,mercredi,September Equinox,Season,67,H68
+2026-10-15,2026,jeudi,Evacuation Day,Public Holiday,69,H70
+2022-09-23,2022,vendredi,September Equinox,Season,7,H8

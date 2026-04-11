@@ -1,0 +1,21 @@
+id_category,name,codeCategory
+1,Wedding,E1
+2,Corporate,E2
+3,Birthday,E3
+4,Environment & Waste,E4
+5,Medical & Pharma,E5
+6,Electric & Electronics,E6
+7,Education & Training,E7
+8,Food & Beverages,E8
+9,IT & Technology,E9
+10,Logistics & Transportation,E10
+11,Power & Energy,E11
+12,Entertainment & Media,E12
+13,Banking & Finance,E13
+14,Science & Research,E14
+15,Industrial Engineering,E15
+16,Business Services,E16
+17,Packing & Packaging,E17
+18,Telecommunication,E18
+21,Private Party,E21
+23,Corporate Event,E23

@@ -1,0 +1,7 @@
+id_subcategory,codeSubcategory,name,id_categoryFK
+1,SC-1,Venue,1
+2,SC-2,Catering,1
+3,SC-3,Entertainment,2
+4,SC-4,Decoration,3
+5,SC-5,Photography,-1
+6,SC-6,DJ,-1

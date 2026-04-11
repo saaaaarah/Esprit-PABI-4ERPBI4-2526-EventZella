@@ -1,0 +1,36 @@
+id_holiday,codeHoliday,holiday_name,holiday_type,id_dateFK
+1,H-1,New Year,Public Holiday,7944
+2,H-2,Independence Day,Public Holiday,8022
+3,H-3,March Equinox,Season,8022
+4,H-4,September Equinox,Season,8209
+5,H-5,The Prophet's Birthday,Public Holiday,8224
+6,H-6,Evacuation Day,Public Holiday,8231
+7,H-7,New Year,Public Holiday,8309
+8,H-8,Independence Day,Public Holiday,8387
+9,H-9,March Equinox,Season,8387
+10,H-10,Ramadan Start,Observance,8390
+11,H-11,September Equinox,Season,8574
+12,H-12,The Prophet's Birthday,Public Holiday,8578
+13,H-13,Evacuation Day,Public Holiday,8596
+14,H-14,New Year,Public Holiday,8674
+15,H-15,Ramadan Start,Observance,8744
+16,H-16,Independence Day,Public Holiday,8753
+17,H-17,March Equinox,Season,8753
+18,H-18,The Prophet's Birthday,Public Holiday,8932
+19,H-19,September Equinox,Season,8939
+20,H-20,Evacuation Day,Public Holiday,8962
+21,H-21,New Year,Public Holiday,9040
+22,H-22,Ramadan Start,Observance,9099
+23,H-23,Independence Day,Public Holiday,9118
+24,H-24,March Equinox,Season,9118
+25,H-25,Eid al-Fitr,Public Holiday,9129
+26,H-26,The Prophet's Birthday,Public Holiday,9286
+27,H-27,September Equinox,Season,9304
+28,H-28,Evacuation Day,Public Holiday,9327
+29,H-29,New Year,Public Holiday,9405
+30,H-30,Independence Day,Public Holiday,0
+31,H-31,March Equinox,Season,0
+32,H-32,Eid al-Fitr (Tentative Date),Public Holiday,0
+33,H-33,Eid al-Fitr Holiday (Tentative Date),Public Holiday,0
+34,H-34,September Equinox,Season,0
+35,H-35,Evacuation Day,Public Holiday,0

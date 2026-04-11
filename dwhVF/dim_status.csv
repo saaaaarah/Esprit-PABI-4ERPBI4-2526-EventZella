@@ -1,0 +1,4 @@
+id_status,codeStatus,status
+1,Stat-1,pending
+3,Stat-3,confirmed
+8,Stat-8,cancelled

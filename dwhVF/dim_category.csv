@@ -1,0 +1,23 @@
+id_category,codeCategory,name
+-1,Cat-0,Unknown
+1,Cat-1,Wedding
+2,Cat-2,Corporate
+3,Cat-3,Birthday
+4,Cat-4,Environment & Waste
+5,Cat-5,Medical & Pharma
+6,Cat-6,Electric & Electronics
+7,Cat-7,Education & Training
+8,Cat-8,Food & Beverages
+11,Cat-11,IT & Technology
+12,Cat-12,Logistics & Transportation
+15,Cat-15,Power & Energy
+21,Cat-21,Entertainment & Media
+24,Cat-24,Banking & Finance
+32,Cat-32,Science & Research
+39,Cat-39,Industrial Engineering
+40,Cat-40,Business Services
+49,Cat-49,Packing & Packaging
+61,Cat-61,Telecommunication
+85,Cat-85,Unknown
+87,Cat-87,Private Party
+91,Cat-91,Corporate Event

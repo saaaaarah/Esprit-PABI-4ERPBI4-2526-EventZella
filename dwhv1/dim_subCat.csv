@@ -1,0 +1,5 @@
+id_subcategory,name,id_category_FK,CodeSubC
+1,Venue,1,SC1
+2,Catering,1,SC2
+3,Entertainment,2,SC3
+4,Decoration,3,SC4
