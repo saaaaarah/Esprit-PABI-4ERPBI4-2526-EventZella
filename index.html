@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventZella Machine Learning Dashboard</title>
+  <meta name="description" content="EventZella ML presentation dashboard for forecasting, prediction, and business decision support.">
+  <link rel="stylesheet" href="styles.css?v=final-classification">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#hero">
+        <span class="brand-mark">
+          <img src="logo.svg" alt="EventZella logo">
+        </span>
+        <span>
+          <strong>EventZella</strong>
+          <small>Intelligence Suite</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#overview">Methodology</a>
+        <a href="#models">Models</a>
+        <a href="#decision-support">Decision Support</a>
+      </nav>
+      <a class="button button-ghost" href="#decision-support">Business Value</a>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">EventZella ML Dashboard</span>
+          <h1>EventZella transforms event data into forecasting and decision support.</h1>
+          <p>
+            This interface presents validated machine learning results for forecasting, demand analysis, and risk classification.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#models">Explore ML Modules</a>
+          </div>
+          <div class="hero-summary-grid">
+            <article class="hero-summary-card">
+              <span>Forecasting</span>
+              <strong>Revenue projection</strong>
+              <small>Model comparison and trend reading</small>
+            </article>
+            <article class="hero-summary-card">
+              <span>Demand Analysis</span>
+              <strong>Demand drivers</strong>
+              <small>Price and seasonality effects</small>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-glow"></div>
+          <div class="hero-panel-grid"></div>
+          <div class="hero-orbit hero-orbit-one"></div>
+          <div class="hero-orbit hero-orbit-two"></div>
+          <div class="hero-float-card hero-float-a"></div>
+          <div class="hero-float-card hero-float-b"></div>
+          <div class="hero-panel-header">
+            <div>
+              <span class="micro-label">Machine Learning Overview</span>
+              <h2>Machine learning results presented through a structured dashboard</h2>
+            </div>
+          </div>
+          <article class="hero-command">
+            <div class="command-metrics">
+              <div>
+                <small>Forecast Model</small>
+                <strong>ARIMA</strong>
+              </div>
+              <div>
+                <small>Key Feature</small>
+                <strong>Price</strong>
+              </div>
+              <div>
+                <small>Classification Model</small>
+                <strong>Gradient Boosting</strong>
+              </div>
+            </div>
+          </article>
+          <article class="hero-forecast-card">
+            <div class="viz-header">
+              <h4>Forecast Snapshot</h4>
+              <span>MAPE: 6.07%</span>
+            </div>
+            <div class="hero-forecast-grid">
+              <div class="hero-kpi">
+                <span>Selected model</span>
+                <strong>ARIMA</strong>
+                <small>MAPE: 6.07%</small>
+              </div>
+              <div class="hero-mini-chart" id="hero-forecast-chart"></div>
+            </div>
+          </article>
+          <div class="hero-stat-grid">
+            <article class="stat-card stat-card-accent">
+              <span>Model Performance</span>
+              <strong>MAPE: 6.07%</strong>
+            </article>
+            <article class="stat-card">
+              <span>Key Features</span>
+              <strong>Price and Month</strong>
+              <small>Most influential features</small>
+            </article>
+            <article class="stat-card">
+              <span>Classification</span>
+              <strong>Accuracy: 0.66</strong>
+              <small>Gradient Boosting</small>
+            </article>
+            <article class="stat-card">
+              <span>Business Impact</span>
+              <strong>Supports forecasting, pricing, and monitoring</strong>
+              <small>Based on updated notebook outputs</small>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section section-bridge" aria-hidden="true">
+        <div class="bridge-line"></div>
+      </section>
+
+      <section class="overview section" id="overview">
+        <div class="section-heading">
+          <span class="eyebrow">Methodology</span>
+          <h2>Machine learning process and scope</h2>
+          <p>
+            This dashboard summarizes notebook-based preprocessing, feature selection, model evaluation,
+            and business-oriented interpretation for the EventZella validation.
+          </p>
+        </div>
+        <div class="overview-grid">
+          <article class="glass-card">
+            <h3>Data Preparation</h3>
+            <p>Missing values, outlier handling, encoding, and scaling are explicitly implemented in the notebooks.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Feature Engineering</h3>
+            <p>Derived variables include seasonal flags, service-level aggregates, discount rate, and selected top features.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Model Evaluation</h3>
+            <p>Forecasting, regression, and classification models are compared with notebook-reported metrics only.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Selection Scope</h3>
+            <p>Only explicit notebook outputs are shown. Missing values or unsupported visuals are marked as not available.</p>
+          </article>
+        </div>
+        <div class="method-grid">
+          <article class="glass-card method-card">
+            <h3>Preprocessing</h3>
+            <div class="compact-facts">
+              <div class="fact-row">
+                <span>Missing values</span>
+                <strong>Handled in notebook</strong>
+              </div>
+              <div class="fact-row">
+                <span>Outliers</span>
+                <strong>IQR winsorization</strong>
+              </div>
+              <div class="fact-row">
+                <span>Encoding</span>
+                <strong>Ordinal and label encoding</strong>
+              </div>
+              <div class="fact-row">
+                <span>Scaling</span>
+                <strong>StandardScaler</strong>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card method-card">
+            <h3>Feature Selection</h3>
+            <div class="compact-facts">
+              <div class="fact-row">
+                <span>Method</span>
+                <strong>SelectKBest ANOVA F-score</strong>
+              </div>
+              <div class="fact-row">
+                <span>Classification focus</span>
+                <strong>svc_count, svc_std_price, month</strong>
+              </div>
+              <div class="fact-row">
+                <span>Regression focus</span>
+                <strong>svc_avg_price, svc_avg_rating</strong>
+              </div>
+              <div class="fact-row">
+                <span>Train / test split</span>
+                <strong>80% train, 20% test</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="models">
+        <div class="section-heading">
+          <span class="eyebrow">ML Modules</span>
+          <h2>Machine learning results across three modules</h2>
+          <p>
+            Each module below is based on notebook content. Tabs let you switch quickly during your presentation.
+          </p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="ML modules">
+          <button class="tab is-active" data-tab-target="forecasting" role="tab" aria-selected="true">Revenue Forecasting</button>
+          <button class="tab" data-tab-target="demand" role="tab" aria-selected="false">Demand Prediction</button>
+          <button class="tab" data-tab-target="classification" role="tab" aria-selected="false">Cancellation Classification</button>
+        </div>
+
+        <div class="tab-panels">
+          <section class="tab-panel is-active" id="forecasting" role="tabpanel">
+            <div class="panel-layout">
+              <div class="module-copy">
+                <span class="module-tag">Notebook: RevenueForecasting.ipynb</span>
+                <div class="result-banner">
+                  <span>Main Result</span>
+                  <strong>Selected Model: ARIMA</strong>
+                  <small>Lowest visible error across the reported comparison</small>
+                </div>
+                <h3>Revenue forecasting compares three time-series strategies.</h3>
+                <p>
+                  The notebook compares ARIMA, SARIMA, and SARIMAX on monthly revenue. The ADF test
+                  indicates stationarity, and ARIMA is selected from the visible metrics.
+                </p>
+                <div class="metric-row">
+                  <article class="metric-card">
+                    <span>Selected Model</span>
+                    <strong>ARIMA</strong>
+                    <small>MAPE: 6.07%</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>ADF Statistic</span>
+                    <strong>-6.6150</strong>
+                    <small>p-value: 6.24e-09</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>Forecast Horizon</span>
+                    <strong>6 periods</strong>
+                    <small>2025 output available</small>
+                  </article>
+                </div>
+                <div class="compact-facts">
+                  <div class="fact-row">
+                    <span>Model comparison</span>
+                    <strong>ARIMA, SARIMA, SARIMAX</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Selection rationale</span>
+                    <strong>ARIMA has the lowest visible MAPE, RMSE, and MAE</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Observed series</span>
+                    <strong>Monthly revenue from 2023-02 to 2024-09</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Decomposition / KPSS</span>
+                    <strong>Not available in notebook output</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="viz-stack">
+                <article class="viz-card viz-card-elevated">
+                  <div class="viz-header">
+                    <h4>Observed Revenue Trend</h4>
+                    <span>Notebook monthly series</span>
+                  </div>
+                  <div class="line-chart" id="forecast-line-chart"></div>
+                </article>
+                <article class="viz-card">
+                  <div class="viz-header">
+                    <h4>Forecast Error Comparison</h4>
+                    <span>MAPE by model</span>
+                  </div>
+                  <div class="bar-chart" id="forecast-chart"></div>
+                </article>
+                <article class="viz-card">
+                  <div class="viz-header">
+                    <h4>Evaluation Metrics</h4>
+                    <span>MAPE, RMSE, and MAE</span>
+                  </div>
+                  <div class="matrix-grid" id="forecast-matrix"></div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="tab-panel" id="demand" role="tabpanel" hidden>
+            <div class="panel-layout">
+              <div class="module-copy">
+                <span class="module-tag">Notebooks: PI_ML11.ipynb, finalnote.ipynb</span>
+                <div class="result-banner">
+                  <span>Main Result</span>
+                  <strong>Price and Month are the most influential features</strong>
+                  <small>XGBoost is selected from the visible regression metrics, while Random Forest provides feature importance</small>
+                </div>
+                <h3>Demand prediction highlights the strongest business drivers.</h3>
+                <p>
+                  The notebook models demand using price, month, rating, and encoded service titles.
+                  XGBoost and Random Forest are both evaluated, with explicit RMSE and R2 values in the notebook output.
+                  A complementary regression case from <code>finalnote.ipynb</code> models <code>marketing_spend</code> against <code>new_beneficiaries</code>.
+                </p>
+                <div class="metric-row">
+                  <article class="metric-card">
+                    <span>XGBoost</span>
+                    <strong>0.1228</strong>
+                    <small>R2</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>Random Forest</span>
+                    <strong>0.0717</strong>
+                    <small>R2</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>Selection Rationale</span>
+                    <strong>XGBoost</strong>
+                    <small>Lower RMSE and higher R2</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>Finalnote Model</span>
+                    <strong>Random Forest</strong>
+                    <small>R2: 0.2406</small>
+                  </article>
+                </div>
+                <div class="compact-facts">
+                  <div class="fact-row">
+                    <span>Features used</span>
+                    <strong>Price, Month, rating, titles</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Strongest driver</span>
+                    <strong>price</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Seasonality signal</span>
+                    <strong>Month</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>XGBoost RMSE</span>
+                    <strong>0.7089</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Random Forest RMSE</span>
+                    <strong>0.7293</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Actual vs predicted / residuals</span>
+                    <strong>Available for Random Forest in notebook output</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Finalnote target</span>
+                    <strong>new_beneficiaries</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Finalnote feature</span>
+                    <strong>marketing_spend</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="viz-stack">
+                <article class="viz-card viz-card-elevated">
+                  <div class="viz-header">
+                    <h4>Demand Model Comparison</h4>
+                    <span>Visible R2 comparison</span>
+                  </div>
+                  <div class="split-chart" id="demand-chart"></div>
+                </article>
+                <article class="viz-card">
+                  <div class="viz-header">
+                    <h4>Feature Importance</h4>
+                    <span>Random Forest feature weights</span>
+                  </div>
+                  <div class="feature-bars" id="feature-list"></div>
+                </article>
+                <article class="viz-card">
+                  <div class="viz-header">
+                    <h4>Marketing Regression Case</h4>
+                    <span>Notebook: finalnote.ipynb</span>
+                  </div>
+                  <div class="compact-facts">
+                    <div class="fact-row">
+                      <span>Best model</span>
+                      <strong>Random Forest</strong>
+                    </div>
+                    <div class="fact-row">
+                      <span>MSE</span>
+                      <strong>110295.6758</strong>
+                    </div>
+                    <div class="fact-row">
+                      <span>RMSE</span>
+                      <strong>332.1079</strong>
+                    </div>
+                    <div class="fact-row">
+                      <span>MAE</span>
+                      <strong>308.9970</strong>
+                    </div>
+                    <div class="fact-row">
+                      <span>R2</span>
+                      <strong>0.2406</strong>
+                    </div>
+                    <div class="fact-row">
+                      <span>Feature importance</span>
+                      <strong>marketing_spend: 1.0</strong>
+                    </div>
+                    <div class="fact-row">
+                      <span>Example prediction</span>
+                      <strong>500 spend → 543.83 beneficiaries</strong>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="tab-panel" id="classification" role="tabpanel" hidden>
+            <div class="panel-layout">
+              <div class="module-copy">
+                <span class="module-tag">Notebook: ML_C_Pi.ipynb</span>
+                <div class="result-banner">
+                  <span>Main Result</span>
+                  <strong>Gradient Boosting Accuracy: 0.66</strong>
+                  <small>Selected model based on highest visible accuracy</small>
+                </div>
+                <h3>Classification Results</h3>
+                <div class="metric-row">
+                  <article class="metric-card">
+                    <span>Accuracy</span>
+                    <strong>0.66</strong>
+                    <small>Gradient Boosting</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>Precision</span>
+                    <strong>0.55</strong>
+                    <small>Weighted average</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>Recall</span>
+                    <strong>0.66</strong>
+                    <small>Weighted average</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>F1-score</span>
+                    <strong>0.54</strong>
+                    <small>Weighted average</small>
+                  </article>
+                </div>
+                <div class="compact-facts">
+                  <div class="fact-row">
+                    <span>Features used</span>
+                    <strong>id_event, id_service, rating_num, final_price</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Target</span>
+                    <strong>is_canceled</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Support</span>
+                    <strong>1359 test samples</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>RF Mean CV Score</span>
+                    <strong>61.85%</strong>
+                  </div>
+                  <div class="fact-row">
+                    <span>Best RF parameters</span>
+                    <strong>50 trees, no depth limit, split 2</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="viz-stack">
+                <article class="viz-card">
+                  <div class="viz-header">
+                    <h4>Model Comparison</h4>
+                    <span>Gradient Boosting and Random Forest</span>
+                  </div>
+                  <div class="split-chart" id="classification-chart"></div>
+                </article>
+                <article class="viz-card">
+                  <div class="viz-header">
+                    <h4>Evaluation Metrics</h4>
+                    <span>Random Forest and Gradient Boosting</span>
+                  </div>
+                  <div class="matrix-grid matrix-grid-light" id="classification-metrics"></div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section" id="decision-support">
+        <div class="section-heading">
+          <span class="eyebrow">Decision Support</span>
+          <h2>How EventZella can support business actions</h2>
+          <p>
+            This section helps you explain the practical value of the ML work in business language during your validation.
+          </p>
+        </div>
+        <div class="decision-grid">
+          <article class="decision-card">
+            <h3>Forecasting</h3>
+            <p>ARIMA provides the strongest visible forecasting fit, supporting revenue forecasting and planning decisions.</p>
+          </article>
+          <article class="decision-card">
+            <h3>Demand Prediction</h3>
+            <p>Price and Month are the strongest visible demand drivers, supporting pricing and seasonal demand interpretation.</p>
+          </article>
+          <article class="decision-card">
+            <h3>Classification</h3>
+            <p>Cancellation classification supports operational risk monitoring through compared model performance.</p>
+          </article>
+          <article class="decision-card">
+            <h3>Business Impact</h3>
+            <p>The notebook results support revenue planning, pricing decisions, seasonal interpretation, and cancellation monitoring.</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js?v=final-classification"></script>
+</body>
+</html>
